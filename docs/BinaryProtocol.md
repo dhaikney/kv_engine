@@ -127,11 +127,12 @@ For V1, only one object identifier is defined:
                                value (see below)
 
 This would be encoded as:
-  Byte/     0       |       1       |       2       |
-     /              |               |               |
-    |0 1 2 3 4 5 6 7|0 1 2 3 4 5 6 7|0 1 2 3 4 5 6 7|
-    +---------------+---------------+---------------+
-   0|  ID:0 | Len:2 |  Server Recv->Send Duration   |
+
+      Byte/     0       |       1       |       2       |
+         /              |               |               |
+        |0 1 2 3 4 5 6 7|0 1 2 3 4 5 6 7|0 1 2 3 4 5 6 7|
+        +---------------+---------------+---------------+
+       0|  ID:0 | Len:2 |  Server Recv->Send Duration   |
 
 
 The duration in micros is encoded as:
